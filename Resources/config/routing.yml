@@ -1,0 +1,3 @@
+ramasy_psrize_homepage:
+    path:     /
+    defaults: { _controller: RamasyPsrizeBundle:Default:index }
