@@ -19,5 +19,10 @@
     "autoload": {
     },
     "autoload-dev": {
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0"
+        }
     }
 }
