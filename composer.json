@@ -1,0 +1,23 @@
+{
+    "name": "Ramasy/PsrizeBundle",
+    "description": "Tgis bundle help you to test if your code follows psr-1/psr-2 standard",
+    "type": "symfony-bundle",
+    "authors": [
+        {
+            "name": "RAMASY Heritier . A",
+            "email": "heritier.ramasy@gmail.com"
+        }
+    ],
+
+    "keywords": ["psr-1","psr-2", "symfony", "bundle"],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+    },
+    "autoload-dev": {
+    }
+}
