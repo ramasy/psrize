@@ -16,13 +16,17 @@
     },
     "require-dev": {
     },
-    "autoload": {
+   "autoload" : {
+        "psr-0" : {
+            "Ramasy\\PsrizeBundle" : ""
+        }
     },
-    "autoload-dev": {
-    },
+    "target-dir" : "Ramasy/PsrizeBundle",
+   "repositories" : [{
+    }],
     "extra": {
         "branch-alias": {
-            "master": "1.0"
+            "dev-master": "1.0-dev"
         }
     }
 }
