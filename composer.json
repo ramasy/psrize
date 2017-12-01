@@ -1,5 +1,5 @@
 {
-    "name": "Ramasy/PsrizeBundle",
+    "name": "ramasy/psrize",
     "description": "Tgis bundle help you to test if your code follows psr-1/psr-2 standard",
     "type": "symfony-bundle",
     "authors": [
