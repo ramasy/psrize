@@ -46,6 +46,12 @@ Installation
     );
 ```
 
+**4** Run  
+
+``` shell
+    $php bin/console app:psrize path_to_a_directory 
+``` 
+
 License
 -------
 
