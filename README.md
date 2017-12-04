@@ -55,7 +55,7 @@ Installation
 License
 -------
 
-This bundle is under the MIT license. See the complete license [in the bundle](LICENSE)
+This bundle is under the MIT license. See the complete license [in the bundle](https://github.com/ramasy/psrize/LICENCE.md)
 
 
 Reporting an issue or a feature request
