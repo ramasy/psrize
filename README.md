@@ -31,7 +31,13 @@ Installation
 }
 ```
 
-**2** Register the bundle in ``app/AppKernel.php``
+**2** Run composer update 
+
+``` shell
+    $composer update ramasy/psrize
+``` 
+
+**3** Register the bundle in ``app/AppKernel.php``
 
 ``` php
     $bundles = array(
@@ -50,3 +56,4 @@ Reporting an issue or a feature request
 ---------------------------------------
 
 Issues and feature requests are tracked in the [Github issue tracker](https://github.com/ramasy/psrize/issues).
+
