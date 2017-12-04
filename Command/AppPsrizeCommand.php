@@ -23,12 +23,13 @@ class AppPsrizeCommand extends ContainerAwareCommand
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $racine = $this->getContainer()->get('kernel')->getRootDir().'/../src/';
+        $racine = $this->getContainer()->get('kernel')->getRootDir() .'/../src/';
+        $bin = $this->getContainer()->get('kernel')->getRootDir() .'/../vendor/bin/';
         $path_option = $input->getArgument('path') . "/";
-        $full_path = $racine.$path_option;
+        $full_path = $racine . $path_option;
         $full_path = preg_replace('/\//', DIRECTORY_SEPARATOR, $full_path);
         if (!is_dir($full_path)) {
-            $output->writeln("<error> /!\ Le dossier " . $full_path . " n'existe pas </error>");
+            $output->writeln("<error> /!\ Unable to find " . $full_path . " directory </error>");
             return;
         }
         $list_file = array_diff(scandir($full_path), array('.', '..'));
@@ -43,14 +44,14 @@ class AppPsrizeCommand extends ContainerAwareCommand
             if (preg_match('/.php$/', $nomFichier)) {
                 $numFichier ++;
                 $helper = $this->getHelper('question');
-                $question = new ConfirmationQuestion('File ['.$numFichier.'/'. sizeOf($list_file). ']: '.$nomFichier.'?(y/N)', false);
+                $question = new ConfirmationQuestion('File [' . $numFichier . '/' . sizeOf($list_file) . ']: ' .$nomFichier. '?(y/N)', false);
                 if ($helper->ask($input, $output, $question)) {
-                    $str_commande_cs = "phpcbf -n --colors --standard=PSR2 \"". $full_path . $nomFichier ."\"";
-                    $output->writeln("<info>psrize - ".$nomFichier . "</info>");
+                    $str_commande_cs = $bin . "phpcbf -n --colors --standard=PSR2 \"" . $full_path . $nomFichier . "\"";
+                    $output->writeln("<info>psrize - " . $nomFichier . "</info>");
                     system($str_commande_cs, $retval);
                     foreach ($listeCommande as $designationCommande => $commande) {
-                        $str_commande = "phpmd \"" . $full_path . $nomFichier . "\" ". $commande;
-                        $output->writeln("<info>==>".$designationCommande . "</info>");
+                        $str_commande = $bin . "phpmd \"" . $full_path . $nomFichier . "\" " . $commande;
+                        $output->writeln("<info>==>" . $designationCommande . "</info>");
                         system($str_commande, $retval);
                         print PHP_EOL;
                     }
