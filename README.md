@@ -13,9 +13,6 @@ Features include:
 Documentation
 -------------
 
-The source of the documentation is stored in the `Resources/doc/` folder
-in this bundle, and available on symfony.com:
-
 [Read the Documentation](http://psrize.readthedocs.io/en/latest/)
 
 Installation
