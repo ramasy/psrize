@@ -26,6 +26,10 @@ class AppPsrizeCommand extends ContainerAwareCommand
         $racine = $this->getContainer()->get('kernel')->getRootDir() .'/../src/';
         $bin_path = $this->getContainer()->get('kernel')->getRootDir() .'/../vendor/bin/';
         $bin = preg_replace('/\//', DIRECTORY_SEPARATOR, $bin_path);
+        if (!is_dir($bin)) {
+            $bin_path = $this->getContainer()->get('kernel')->getRootDir() .'/../bin/';
+            $bin = preg_replace('/\//', DIRECTORY_SEPARATOR, $bin_path);
+        }
         $path_option = $input->getArgument('path') . "/";
         $full_path = $racine . $path_option;
         $full_path = preg_replace('/\//', DIRECTORY_SEPARATOR, $full_path);
