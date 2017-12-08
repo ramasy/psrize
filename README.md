@@ -1,8 +1,8 @@
 PsrizeBundle
 =============
 
-This bundle helps you to improve your code design,style and structure on a symfony project
-Features include:
+This bundle helps you to improve your code design,style and structure on a symfony project,
+ Features include:
 
 - Automatically corrects code inside php file to follow psr-2 standard
 - show code size 
