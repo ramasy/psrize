@@ -51,7 +51,10 @@ Installation
 
 **path_to_a_directory** represent a relative path from the directory src/ of your symfony project
 
-Example : the correct relative path for the directory **youApp/src/AppBundle/Controller** is **AppBundle/controller**
+Example : 
+
+the correct relative path for the directory **youApp/src/AppBundle/Controller** is **AppBundle/controller**
+
 License
 -------
 
