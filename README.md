@@ -53,7 +53,7 @@ Installation
 
 Example : 
 
-the correct relative path for the directory **youApp/src/AppBundle/Controller** is **AppBundle/controller**
+the correct relative path for the directory **youApp/src/AppBundle/Controller** is **AppBundle/Controller**
 
 License
 -------
