@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2015-2017 RAMASY Heritier . A
+Copyright (c) 2015-2018 RAMASY Heritier . A
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
