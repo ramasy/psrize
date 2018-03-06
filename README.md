@@ -31,7 +31,7 @@ Installation
 **2** Run composer update 
 
 ``` shell
-    $composer update ramasy/psrize
+    $ composer update ramasy/psrize
 ``` 
 
 **3** Register the bundle in ``app/AppKernel.php``
@@ -46,7 +46,7 @@ Installation
 **4** Run  
 
 ``` shell
-    $php bin/console app:psrize path_to_a_directory 
+    $ php bin/console app:psrize path_to_a_directory 
 ``` 
 
 **path_to_a_directory** represent a relative path from the directory src/ of your symfony project
